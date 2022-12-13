@@ -22,6 +22,11 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# Camera
+PRODUCT_PACKAGES += \
+    libMegviiFacepp-0.5.2 \
+    libmegface
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/pixel/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
 
